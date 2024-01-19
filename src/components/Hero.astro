@@ -1,17 +1,21 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const { src = '/astronaut-hero-img.webp' } = Astro.props
+const { src = '/creek.jpeg' } = Astro.props
 ---
 
 <section class="hero my-24">
   <div class="container">
     <div class="grid grid-cols-1 items-center gap-24 lg:grid-cols-2">
-      <div class="flex flex-col items-center gap-8 md:items-start">
+      <div class="flex flex-col items-center gap-8 md:items-start z-10">
         <h1 class="text-center text-6xl md:text-left lg:text-8xl">
-          <slot><span class="text-gradient">Accessible</span> Starter for Astro</slot>
+          <slot><span class="text-gradient">Michael Manoguerra</span></slot>
         </h1>
-        <div class="flex flex-col gap-3 min-[500px]:flex-row">
+
+        <p class="text-center text-2xl md:text-left lg:text-4xl">
+          <slot><span class="text-gradient"></span>Full Stack Software Engineer</slot>
+        </p>
+        <!-- <div class="flex flex-col gap-3 min-[500px]:flex-row">
           <a class="button has-icon" href="https://github.com/markteekman/accessible-astro-starter">
             <Icon name="ion:star-outline" />
             Star on GitHub
@@ -23,9 +27,11 @@ const { src = '/astronaut-hero-img.webp' } = Astro.props
             <Icon name="ion:bookmark-outline" />
             Read the Docs
           </a>
-        </div>
+        </div>-->
       </div>
-      <img class="hidden lg:block" src={src} alt="" decoding="async" />
+      <div class="hidden lg:block overflow-hidden rounded-full ">
+        <img class="" src={src} alt="" decoding="async" />
+      </div>
     </div>
   </div>
 </section>

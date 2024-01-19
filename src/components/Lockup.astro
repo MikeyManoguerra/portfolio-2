@@ -1,0 +1,33 @@
+---
+import { Icon } from 'astro-icon/components';
+
+const { heading, primaryUrl = null, secondaryUrl = null } = Astro.props;
+---
+
+<h2>{heading}</h2>
+<p class="text-xl">
+  <slot />
+</p>
+<div class="flex flex-col gap-4 min-[500px]:flex-row">
+  {
+    primaryUrl ? (
+      <a class="button has-icon" href={primaryUrl}  target="_blank">
+        <Icon name="ion:git-branch-outline" />
+        Repository
+      </a>
+    ) : (
+      ''
+    )
+  }
+
+  {
+    secondaryUrl ? (
+      <a href={secondaryUrl} class="button has-icon color-secondary" target="_blank">
+        <Icon name="ion:rocket-outline" />
+        Live Site
+      </a>
+    ) : (
+      ''
+    )
+  }
+</div>

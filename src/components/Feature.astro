@@ -1,16 +1,31 @@
 ---
 import { Icon } from 'astro-icon/components'
 
-const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
+const { icon = 'mdi:rocket', title = 'Title', url = null } = Astro.props;
+const linkClass = url ? 'as-link' : '';
 ---
 
-<div class="feature flex flex-col gap-4">
-  <Icon name={icon} />
-  <div class="content">
-    <h3>{title}</h3>
-    <p>
-      <slot>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, corporis.</slot>
-    </p>
+<div class={`feature ${linkClass}`}>
+  <div class="feature__inner flex flex-col gap-4">
+    <div class="flex items-center gap-2">
+      <Icon name={icon} />
+      <div class="content">
+        <h3>
+          {
+            url ? (
+              <a class="link" href={url}>
+                {title}
+              </a>
+            ) : (
+              title
+            )
+          }
+        </h3>
+      </div>
+      <p>
+        <slot />
+      </p>
+    </div>
   </div>
 </div>
 
@@ -20,12 +35,6 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
   .feature {
     position: relative;
     width: calc(100% - 0.5rem);
-    padding: 2rem;
-
-    > * {
-      position: relative;
-      z-index: 2;
-    }
 
     @include breakpoint(large) {
       width: 100%;
@@ -49,15 +58,50 @@ const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
     &::after {
       background-color: var(--action-color);
       inset: 1rem -0.85rem -0.85rem 1rem;
-      border-radius: 1rem;
+      border-radius: 1.75rem;
       z-index: 0;
+      transition-property: inset;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-duration: 150ms;
+    }
+
+    &.as-link {
+      &:hover,
+      &:focus-within {
+        &::after {
+          inset: 0.15rem 0 0.15rem 0;
+        }
+      }
+    }
+  }
+
+  .feature__inner {
+    position: relative;
+    padding: 2rem;
+    z-index: 2;
+  }
+
+  .link {
+    text-decoration: none;
+
+    .feature:hover &,
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+      color: var(--action-color-state);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      inset: 0;
     }
   }
 
   :global(.feature [data-icon]) {
     height: auto;
     width: 4rem;
-    color: var(--action-color);
+    color: var(--font-color);
   }
 
   :global(.darkmode .feature::before) {

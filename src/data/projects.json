@@ -1,0 +1,122 @@
+[
+  {
+    "heading": "Stitch by Michelle",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1595708651/stitch.png",
+    "primaryUrl": "",
+    "secondaryUrl": "https://stitch-by-michelle.netlify.app/",
+    "excerpt": "Headless CMS landing page for local seamstress",
+    "body": "Near MVP Headless Content Management System Site for a local seamstress. A Jamstack site with custom designed reusable components built with vue, Gridsome, and Netlify CMS.",
+    "featured": true,
+    "technologies": "[vue3]"
+  },
+  {
+    "heading": "Random String Generator",
+    "src": "/rsg.png",
+    "primaryUrl": "https://github.com/MikeyManoguerra/random-string-generator",
+    "secondaryUrl": "https:/\/mikeymanoguerra.github.io/random-string-generator/",
+    "excerpt": "Tool to create random strings with DOM crypto API",
+    "body": "Create a randomized string for passwords, or other uses of randomized characters. Uses the browser's Crypto Api for true randomness.",
+    "featured": true,
+    "technologies": "[vanilla JS]"
+  },
+  {
+    "heading": "CSS Art",
+    "src": "/fan.png",
+    "primaryUrl": "https://github.com/MikeyManoguerra/css-art",
+    "secondaryUrl": "https://mikeymanoguerra.github.io/css-art/",
+    "excerpt": "Pure CSS Art Gallery",
+    "body": "Pure CSS art, each done in a single session of 1-4 hours. Learned many details and eccentricities of CSS, and I would credit this series in solidifying my general knowledge of available CSS properties.",
+    "featured": true,
+    "technologies": "[vanilla CSS]"
+  },
+  {
+    "heading": "Dustballs.app",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1592671486/dustballs-screen.png",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/dustballs",
+    "secondaryUrl": "https:/\/dustballs.app",
+    "excerpt": "Quirky display of the complete works of Shakespeare",
+    "body": "Application combining React Typescript SPA with a Flask Server and a Mongo Database. Netlify Frontend communicates with REST backend on a DigitalOcean Droplet.",
+    "featured": true,
+    "technologies": "[python, react]"
+  },
+  {
+    "heading": "Roller Circus Splash Site",
+    "src": "",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/roller-circus",
+    "secondaryUrl": "https:/\/rollercircusofficial.com",
+    "excerpt": "Landing page and digital programs for Roller Circus: The Greatest Show on Wheels",
+    "body": "",
+    "featured": false,
+    "technologies": "[html, css, web components]"
+  },
+  {
+    "heading": "Knowledge Maze",
+    "excerpt": "Decision web quiz builder, inspired by 'Choose Your Own Adventure' books",
+    "body": "Knowledge maze is a group project that I am refactoring and adding functionality to. Click through a choose your own adventure style maze, or create your own!",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1569336781/Screen_Shot_2019-09-24_at_10.51.33.png",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/decision-trees",
+    "secondaryUrl": "https:/\/agitated-murdock-a299b6.netlify.com",
+    "featured": false,
+    "technologies": "[express, react, mongodb]"
+  },
+  {
+    "heading": "Views-Via-ISS",
+    "excerpt": "Combines multiple NASA APIs to serve  Landsat 8  satellite images",
+    "body": "This app uses coding best practices for front end functionality and session persistence of data. The app uses three different API's, One to get the current location of the International Space Station, A second to get LandSat 8 image data of the location, and a third to get a matching static map. The LandSat 8 API returns 500 errors if no image exists per the request, and since most of the earth is water by surface area, this is a lot of errors. Views via Iss handles errors, stores successful responses, and allows changing the parameters of the location. The next step is to allow to search through your session's successful requests. Another addition would be to find another live-location data source with a circum-polar orbit.",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555687146/issdark.png",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/Views-via-ISS",
+    "secondaryUrl": "https:/\/mikeymanoguerra.github.io/Views-via-ISS/",
+    "featured": false,
+    "technologies": "[jquery, webpack]"
+  },
+  {
+    "heading": "Python CLI Dichotomous Key",
+    "excerpt": "Dicotomous key for the identification Eastern North American pine trees",
+    "body": "Command line tool to identify eastern species of the Pinus Genus (pine trees). version 2.0 with a django back end and PostGresQL server in the works",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1555216047/CLI.png",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/dichotomous-key",
+    "secondaryUrl": null,
+    "featured": false,
+    "technologies": "[python]"
+  },
+  {
+    "heading": "Friday Night Knowledge",
+    "excerpt": "Spaced reptition algorithm application to teach basic words in multiple languages",
+    "body": "This project uses a spaced repetition algorithm to serve a list of foreign words in an order based upon how often you get the word correct. More successful answers mean more time before the word appears again. This is version 2.0 of the app, which is refactored from a pair project. The user can now pick from several languages, and the database will hold the history of the user for each. The code base is in a mono repo. ",
+    "src": "https: //res.cloudinary.com/dgzjr8afn/image/upload/v1555616756/new-friday.png",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/spaced-repetition-project",
+    "secondaryUrl": "https:/\/friday-night-knowledge.netlify.com/",
+    "featured": false,
+    "technologies": "[express, react, mongodb]"
+  },
+  {
+    "heading": "Biodiversity Party",
+    "excerpt": "Exposition of botany related vocabulary",
+    "body": "This project uses a spaced repetition algorithm to serve a list of foreign words in an order based upon how often you get the word correct. More successful answers mean more time before the word appears again. This is version 2.0 of the app, which is refactored from a pair project. The user can now pick from several languages, and the database will hold the history of the user for each. The code base is in a mono repo. ",
+    "src": "https: //res.cloudinary.com/dgzjr8afn/image/upload/v1555616756/new-friday.png",
+    "primaryUrl": "",
+    "secondaryUrl": "https:/\/biodiversity.party/",
+    "featured": false,
+    "technologies": "[vanilla CSS]"
+  },
+  {
+    "heading": "P5 Examples",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1588342577/treesp5.png",
+    "primaryUrl": "https:/\/github.com/MikeyManoguerra/p5-hosted-example",
+    "secondaryUrl": "https://mikeymanoguerra.github.io/p5-hosted-example/",
+    "excerpt": "p5.js examples made for highschool summer class I taught",
+    "body": "Examples I did for a web development/ programming course I taught to highschool students involved in SMASH Academy",
+    "featured": false,
+    "technologies": "[p5.js]"
+  },
+  {
+    "heading": "Portfolio 1.0",
+    "excerpt": "My first online portfolio, built completely with runtime JS from a data file",
+    "body": "Original developer portfolio, preserved for posterity",
+    "src": "",
+    "primaryUrl": "https://github.com/MikeyManoguerra/Portfolio",
+    "secondaryUrl": "",
+    "featured": false,
+    "technologies": "[vanilla JS]"
+  }
+]

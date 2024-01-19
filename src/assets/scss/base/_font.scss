@@ -2,7 +2,7 @@
 // | Font
 // | -------------------------------------------------------------
 
-@use 'breakpoint' as *;
+@use 'breakpoint'as *;
 
 @font-face {
   font-family: 'Open Sans';
@@ -65,6 +65,20 @@ body {
       text-decoration: none;
     }
   }
+
+  .card {
+    // for card npm component
+    a {
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+
+
 
   :where(main) a {
     word-wrap: break-word;
@@ -134,6 +148,7 @@ body {
     @include breakpoint(medium) {
       font-size: 1.25rem;
       line-height: 1.875rem;
+
       h6 {
         font-size: 1rem;
       }

@@ -1,7 +1,13 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <div class="container">
   <div class="call-to-action mt-24 mb-32 flex flex-col items-center gap-12 rounded-xl p-12 md:p-24">
-    <h2 class="text-center text-3xl md:text-5xl">Get this theme on GitHub</h2>
-    <a href="https://github.com/markteekman/accessible-astro-starter" class="text-center text-lg"> Use this theme</a>
+    <h2 class="text-center text-3xl md:text-5xl">View All Public Projects</h2>
+    <a href="./projects" class="link text-center text-lg">
+      <Icon name="mdi:dots-horizontal-circle-outline" />
+      Go to Project Grid</a>
   </div>
 </div>
 
@@ -26,5 +32,11 @@
       background-color: var(--neutral-900);
       text-decoration: underline;
     }
+  }
+
+  .link{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
   }
 </style>
