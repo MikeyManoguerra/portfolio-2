@@ -6,8 +6,7 @@ import icon from "astro-icon"
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://mikeymanoguerra.github.io',
-  base: '/portfolio-2',
+  site: 'https://michaelmanoguerra.com',
   compressHTML: true,
   integrations: [mdx(), icon(), tailwind({
     applyBaseStyles: false,
