@@ -13,33 +13,39 @@ import projects from '../data/projects.json'
   <Hero />
   <section class="my-32">
     <div class="container">
-      <h2 class="text-6xl">On the Web</h2>
-      <div class="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
-        <Feature icon="mdi:document" title="Resume" url="/resume.pdf" />
-        <Feature icon="mdi:linkedin" title="LinkedIn" url="https://www.linkedin.com/in/mlcwlomtamlzujmczryr/" />
-        <Feature icon="mdi:github" title="Github" url="https://www.github.com/mikeymanoguerra" />
-        <Feature icon="mdi:codepen" title="Codepen" url="https://codepen.io/mikeymanoguerra/" />
-        <Feature icon="mdi:instagram" title="Instagram" url="https://www.instagram.com/entropyparty/" />
-      </div>
+      <p class="text-4xl">
+        5+ years of hard work in the tech industry, and a lifetime track record of taking on the responsibility to make sure
+        the job is done well.
+      </p>
     </div>
   </section>
-
   <div class="container">
-    <h2 class="text-6xl">Featured Projects</h2>
+    <h2 class="text-6xl">On the Web</h2>
+    <div class="mt-20 grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-3">
+      <Feature icon="mdi:document" title="Resume" url="/resume.pdf" />
+      <Feature icon="mdi:linkedin" title="LinkedIn" url="https://www.linkedin.com/in/mlcwlomtamlzujmczryr/" />
+      <Feature icon="mdi:github" title="Github" url="https://www.github.com/mikeymanoguerra" />
+      <Feature icon="mdi:codepen" title="Codepen" url="https://codepen.io/mikeymanoguerra/" />
+      <Feature icon="mdi:instagram" title="Instagram" url="https://www.instagram.com/entropyparty/" />
+    </div>
   </div>
-  {
-    projects
-      .filter(({ featured }) => featured)
-      .map(({ primaryUrl, secondaryUrl, heading, src, body }, index) => (
-        <ContentMedia imgSrc={src} reverseImg={index % 2 === 1}>
-          <Lockup heading={heading} secondaryUrl={secondaryUrl} primaryUrl={primaryUrl}>
-            {body}
-          </Lockup>
-        </ContentMedia>
-      ))
-  }
-
-  <section class="mb-32 mt-32">
-    <CallToAction />
-  </section>
 </DefaultLayout>
+
+<div class="container">
+  <h2 class="text-6xl">Featured Projects</h2>
+</div>
+{
+  projects
+    .filter(({ featured }) => featured)
+    .map(({ primaryUrl, secondaryUrl, heading, src, body }, index) => (
+      <ContentMedia imgSrc={src} reverseImg={index % 2 === 1}>
+        <Lockup heading={heading} secondaryUrl={secondaryUrl} primaryUrl={primaryUrl}>
+          {body}
+        </Lockup>
+      </ContentMedia>
+    ))
+}
+
+<section class="mb-32 mt-32">
+  <CallToAction />
+</section>
