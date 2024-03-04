@@ -29,23 +29,23 @@ import projects from '../data/projects.json'
       <Feature icon="mdi:instagram" title="Instagram" url="https://www.instagram.com/entropyparty/" />
     </div>
   </div>
+  
+  <div class="container">
+    <h2 class="text-6xl">Featured Projects</h2>
+  </div>
+  {
+    projects
+      .filter(({ featured }) => featured)
+      .map(({ primaryUrl, secondaryUrl, heading, src, body }, index) => (
+        <ContentMedia imgSrc={src} reverseImg={index % 2 === 1}>
+          <Lockup heading={heading} secondaryUrl={secondaryUrl} primaryUrl={primaryUrl}>
+            {body}
+          </Lockup>
+        </ContentMedia>
+      ))
+  }
+  
+  <section class="mb-32 mt-32">
+    <CallToAction />
+  </section>
 </DefaultLayout>
-
-<div class="container">
-  <h2 class="text-6xl">Featured Projects</h2>
-</div>
-{
-  projects
-    .filter(({ featured }) => featured)
-    .map(({ primaryUrl, secondaryUrl, heading, src, body }, index) => (
-      <ContentMedia imgSrc={src} reverseImg={index % 2 === 1}>
-        <Lockup heading={heading} secondaryUrl={secondaryUrl} primaryUrl={primaryUrl}>
-          {body}
-        </Lockup>
-      </ContentMedia>
-    ))
-}
-
-<section class="mb-32 mt-32">
-  <CallToAction />
-</section>
