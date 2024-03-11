@@ -11,7 +11,7 @@ import projects from '../data/projects.json'
 
 <DefaultLayout title="Home">
   <Hero />
-  <section class="my-32">
+  <section class="my-20">
     <div class="container">
       <p class="text-4xl">
         5+ years of hard work in the tech industry, and a lifetime track record of taking on the responsibility to make sure
@@ -29,9 +29,10 @@ import projects from '../data/projects.json'
       <Feature icon="mdi:instagram" title="Instagram" url="https://www.instagram.com/entropyparty/" />
     </div>
   </div>
-  
-  <div class="container">
-    <h2 class="text-6xl">Featured Projects</h2>
+  <div class=" mt-12">
+    <div class="container">
+      <h2 class="text-6xl">Featured Projects</h2>
+    </div>
   </div>
   {
     projects
@@ -44,7 +45,7 @@ import projects from '../data/projects.json'
         </ContentMedia>
       ))
   }
-  
+
   <section class="mb-32 mt-32">
     <CallToAction />
   </section>
