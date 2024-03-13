@@ -45,7 +45,7 @@ const { page } = Astro.props as { page: Page<Project> }
           nextPage={page.url.next ? page.url.next : null}
           lastPage={page.url.next ? `/projects/${Math.round(page.total / page.size)}` : null}
           currentPage={page.currentPage}
-          totalPages={Math.round(page.total / page.size)}
+          totalPages={Math.ceil(page.total / page.size)}
         />
       </div>
     </div>

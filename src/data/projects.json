@@ -1,13 +1,13 @@
 [
   {
-    "heading": "Stitch by Michelle",
-    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1595708651/stitch.png",
-    "primaryUrl": "",
-    "secondaryUrl": "https://stitch-by-michelle.netlify.app/",
-    "excerpt": "Headless CMS landing page for local seamstress",
-    "body": "Near MVP Headless Content Management System Site for a local seamstress. A Jamstack site with custom designed reusable components built with vue, Gridsome, and Netlify CMS.",
+    "heading": "Angular NgRx Cache",
+    "src": "/ngrx-icons.png",
+    "primaryUrl": "https://github.com/MikeyManoguerra/ngrx-cache-example",
+    "secondaryUrl": "https:/\/mikeymanoguerra.github.io/ngrx-cache-example/",
+    "excerpt": "Data cache strategies for NgRx",
+    "body": "Demonstration of three different caching strategies for use in Angular with ab NgRx store.",
     "featured": true,
-    "technologies": "[vue3]"
+    "technologies": "[Angular, RxJs, NgRx, CSS]"
   },
   {
     "heading": "Random String Generator",
@@ -58,6 +58,16 @@
     "secondaryUrl": "https:/\/agitated-murdock-a299b6.netlify.com",
     "featured": false,
     "technologies": "[express, react, mongodb]"
+  },
+  {
+    "heading": "Stitch by Michelle",
+    "src": "https://res.cloudinary.com/dgzjr8afn/image/upload/v1595708651/stitch.png",
+    "primaryUrl": "",
+    "secondaryUrl": "https://stitch-by-michelle.netlify.app/",
+    "excerpt": "Headless CMS landing page for local seamstress",
+    "body": "Near MVP Headless Content Management System Site for a local seamstress. A Jamstack site with custom designed reusable components built with vue, Gridsome, and Netlify CMS.",
+    "featured": false,
+    "technologies": "[vue3]"
   },
   {
     "heading": "Views-Via-ISS",
