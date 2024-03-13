@@ -5,7 +5,7 @@
     "primaryUrl": "https://github.com/MikeyManoguerra/ngrx-cache-example",
     "secondaryUrl": "https:/\/mikeymanoguerra.github.io/ngrx-cache-example/",
     "excerpt": "Data cache strategies for NgRx",
-    "body": "Demonstration of three different caching strategies for use in Angular with ab NgRx store.",
+    "body": "Demonstration of three different caching strategies for use in Angular with an NgRx store.",
     "featured": true,
     "technologies": "[Angular, RxJs, NgRx, CSS]"
   },
