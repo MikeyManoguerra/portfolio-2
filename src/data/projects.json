@@ -1,13 +1,23 @@
 [
   {
     "heading": "Angular NgRx Cache",
-    "src": "/ngrx-icons.png",
+    "src": "/dynamic-form.png",
     "primaryUrl": "https://github.com/MikeyManoguerra/ngrx-cache-example",
     "secondaryUrl": "https:/\/mikeymanoguerra.github.io/ngrx-cache-example/",
     "excerpt": "Data cache strategies for NgRx",
     "body": "Demonstration of three different caching strategies for use in Angular with an NgRx store.",
     "featured": true,
     "technologies": "[Angular, RxJs, NgRx, CSS]"
+  },
+  {
+    "heading": "Angular Dynamic Form Builder",
+    "src": "/ngrx-icons.png",
+    "primaryUrl": "https://github.com/MikeyManoguerra/dynamic-form-builder",
+    "secondaryUrl": "https:/\/mikeymanoguerra.github.io/dynamic-form-builder/",
+    "excerpt": "Form Builder with Dynamic Component Render",
+    "body": " Dynamically inject custom input components into a Reactive Form.",
+    "featured": true,
+    "technologies": "[Angular, TailwindCSS]"
   },
   {
     "heading": "Random String Generator",
@@ -36,7 +46,7 @@
     "secondaryUrl": "https:/\/dustballs.app",
     "excerpt": "Quirky display of the complete works of Shakespeare",
     "body": "Application combining React Typescript SPA with a Flask Server and a Mongo Database. Netlify Frontend communicates with REST backend on a DigitalOcean Droplet.",
-    "featured": true,
+    "featured": false,
     "technologies": "[python, react]"
   },
   {
