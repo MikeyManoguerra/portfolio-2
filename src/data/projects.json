@@ -1,7 +1,7 @@
 [
   {
     "heading": "Angular NgRx Cache",
-    "src": "/dynamic-form.png",
+    "src": "/ngrx-icons.png",
     "primaryUrl": "https://github.com/MikeyManoguerra/ngrx-cache-example",
     "secondaryUrl": "https:/\/mikeymanoguerra.github.io/ngrx-cache-example/",
     "excerpt": "Data cache strategies for NgRx",
@@ -11,7 +11,7 @@
   },
   {
     "heading": "Angular Dynamic Form Builder",
-    "src": "/ngrx-icons.png",
+    "src": "/dynamic-form.png",
     "primaryUrl": "https://github.com/MikeyManoguerra/dynamic-form-builder",
     "secondaryUrl": "https:/\/mikeymanoguerra.github.io/dynamic-form-builder/",
     "excerpt": "Form Builder with Dynamic Component Render",
